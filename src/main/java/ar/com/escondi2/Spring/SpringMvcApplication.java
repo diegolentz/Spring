@@ -1,14 +1,14 @@
-package ar.com.escondi2.Springg;
+package ar.com.escondi2.Spring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringgApplication {
+public class SpringMvcApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(SpringgApplication.class, args);
-		System.out.println("hola como te va");
+		System.out.println("");
+		SpringApplication.run(SpringMvcApplication.class, args);
 	}
 
 }
