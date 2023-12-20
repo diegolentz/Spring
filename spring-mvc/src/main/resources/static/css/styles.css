@@ -1,0 +1,118 @@
+/* normalize */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 63.5%;
+}
+body {
+    font-size: 16px;/* 1 rem = 20px  */
+    font-family: 'krub', sans-serif;
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);); */
+    background-color: #000000;
+}
+h1{
+    font-size: 3.8 px;
+    color: white;
+    margin-top: 2rem;
+}
+h2 {
+    font-size: 2.8 rem;
+    margin: 2rem;
+}
+h3 {
+    font-size: 1.8 rem;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+
+/* titulo */
+.titulo {
+	font-size: 3rem;
+    color: white;
+    font-family: 'Krub', sans-serif;
+	font-family: 'Sacramento', cursive;
+	 margin-bottom: 10px;
+}
+.titulo span {
+    font-size: 4rem;
+    color: red;
+    font-family: 'Krub', sans-serif;
+font-family: 'Sacramento', cursive;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna */
+  gap: 40px; /* Espaciado entre elementos */
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Dos columnas */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+   margin-bottom: 20px;
+  
+}
+
+.ubicacion, .whatsapp, .instagram {
+	gap: 10 rem;
+  text-align: center; /* Alinea el texto al centro */
+  color: white;
+}
+
+/* navbar */
+.nav-bg {
+    display: grid;
+  	grid-template-columns: 1fr; /* Una columna */
+    background-color: red;
+}
+
+.navegacion-principal {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	text-align: center;
+    gap: 20px;
+}
+.navegacion-principal a {
+	
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+.navegacion-principal a:hover {
+    background-color: black;
+    color: red;
+}
+
+
+/* medias querys
+480-> telefono
+768-> tablet
+1140-> laptop
+1440->  
+
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content:space-between;
+        
+    }
+}
+*/
+  
+/* background */
+
+footer {
+    text-align: end;
+    color: white;
+    
+}
