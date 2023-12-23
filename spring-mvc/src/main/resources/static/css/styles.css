@@ -87,7 +87,7 @@ p{
 
 .navegacion-principal {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	grid-template-columns: 1fr 1fr 1fr 1fr ; 
 	text-align: center;
 }
 .navegacion-principal a {
@@ -118,8 +118,10 @@ p{
 	border-radius: 20px;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	flex-wrap: wrap;
+	
 }
-img{
+.imCarrousel{
 	border-radius: 20px;
 	width: 700px;
 	height: 320px;
@@ -161,11 +163,11 @@ transition:[propiedad a modificar] [Duración] [Tipo de animación] [Retardo];
 
 .lateral{
 	display: grid;
-	grid-area: 1fr;
 	background: black;
 	border: 3px solid red;
 	border-radius: 20px;
 	width: 400px;
+	 max-width: calc(33.33% - 80px);
 	height: 320px;	
 	padding: 10px;
 	align-content: space-around;
@@ -209,44 +211,101 @@ transition:[propiedad a modificar] [Duración] [Tipo de animación] [Retardo];
 	text-align: center;
 	font-family: 'Krub', sans-serif;
 	font-size: 2.4rem;
+	
+}
+.segundaBarra {
+	margin: 5px !important;
 }
 .contenedor2{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	justify-content: center;
-  	align-items: center;
-	margin-left: 20px;
+	gap: 20px;
+	margin-top: 20px;
+	margin-left: 60px;
+	justify-content: space-between
+	
+  
 }
 .imagenes2 {
 	width: 400px;
 	height: 400px;	
 	object-fit: contain;
-	margin: 0;
-	padding: 0;
 }
 
 
 .lateral2{
-	padding: 25px;
 	width: 700px;
 	height: 400px;	
 	border-radius: 20px;
 	border: 3px solid red;
-	margin: 30px;
-	align-content: space-around;
-	justify-content: start;
-	
+	text-align: start;
+	padding: 20px;	
 }
 .img{
 	width: 400px;
 	height: 400px;
   	border-radius: 20px;
-  	padding: 0;
-  	margin: 0;
+}
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 30px;
+	border: 2px solid red;
+	margin: 10px 50px 10px 60px;
+	padding: 20px;
+	border-radius: 20px;
+	flex-wrap: wrap;
+	
+	
+	
+}
+.cuerpo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: red;
+	border-radius: 20px;
+	justify-content: start;
+	width: 200px;
+	height: 300px;
+	gap: 10px;
+	
 }
 
+img{
+	object-fit: cover;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+#imgCarta {
+	width: auto;
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+}
+.imgCard{
+	border-bottom: 2px solid black;
+}
+.textoCard{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	color: white;
+	
+}
 footer {
     text-align: end;
     color: white;
     
+}
+
+
+.total{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	min-width: 400px;
+	flex-wrap: nowrap;
+	
 }
